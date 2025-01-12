@@ -6,6 +6,7 @@ import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 
 export default defineConfig({
   root: __dirname,
+  base: process.env?.VUE_APP_API_URL ?? '/',
   cacheDir: '../../node_modules/.vite/apps/vue-shop',
   server: {
     port: 4200,
